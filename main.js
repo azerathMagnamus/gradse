@@ -96,9 +96,9 @@ function countBelow50() {
 }
 
 function lowGradesTo50() {
-  for(let n=0;n<grades.length;n++ )
-  if (grades[n]<50){
-    grades[n]=50
+  last = grades.length;
+  lastgrade = last - 1;
+  grades[lastgrade] = 50;
   }
   // Change all grades that are below 50 to be equal to 50.
   outputEl.innerHTML = "Change low grades to 50";
